@@ -8,7 +8,9 @@ namespace BonhommePendu.Events
         public override string EventType { get { return "WrongGuess"; } }
 
         // TODO: Compléter
-        public WrongGuessEvent(GameData gameData) {
+        public WrongGuessEvent(GameData gameData) 
+        {
+            gameData.NbWrongGuesses++;
         }
     }
 }
